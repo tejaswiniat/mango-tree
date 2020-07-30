@@ -29,7 +29,7 @@ mango5 =  new Mango(random(200,550),random(100,350),70);
 tree = new Tree(100,70,500,600);  
 
 	//Create the Bodies Here.
-	ground = new Ground(650,680,width,10);
+	ground = new Ground(650,700,width,10);
 	
 //	tree.debug = true;
 
@@ -90,7 +90,7 @@ function detectollision(lstone,lmango){
 
 function keyPressed(){
 	if(keyCode === 32){
-		Matter.Body.setPosition(stone.body,{x:235,y:420}); 
+		Matter.Body.setPosition(stone.body,{x:935,y:420}); 
 		elastic.attach(stone.body);
 	}
 }
